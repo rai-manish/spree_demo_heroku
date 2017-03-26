@@ -47,8 +47,18 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+# production:
+#   <<: *default
+#   database: spree_demo_heroku_production
+#   username: spree_demo_heroku
+#   password: <%= ENV['SPREE_DEMO_HEROKU_DATABASE_PASSWORD'] %>
+
 production:
-  <<: *default
-  database: spree_demo_heroku_production
-  username: spree_demo_heroku
-  password: <%= ENV['SPREE_DEMO_HEROKU_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  database: metals-directory_production
+  pool: 5
+  username:
+  password:
+  template: template0
+  host: localhost
