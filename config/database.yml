@@ -55,10 +55,5 @@ test:
 
 production:
   adapter: postgresql
-  encoding: unicode
-  database: metals-directory_production
-  pool: 5
-  username:
-  password:
-  template: template0
-  host: localhost
+  database: spree_demo_heroku_productions
+  
