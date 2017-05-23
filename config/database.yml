@@ -55,5 +55,6 @@ test:
 
 production:
   adapter: postgresql
-  database: spree_demo_heroku_productions
+  host: localhost
+  database: spree_demo_heroku_production
   
